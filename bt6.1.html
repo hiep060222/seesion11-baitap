@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // b1
+        let numbers = 0; // đây là số lượng người dùng muốn
+        numbers = Number(prompt("Nhap so nguyen dung ban muon"))
+
+        //b2
+        let count = 0; // đây là số lượng mình tìm được
+
+        //b3
+        let N = 2; // bắt đầu của chuỗi số nguyên xét nguyên tố
+
+        // điều kiện để dừng: tìm đủ số lượng người dùng mong muốn
+        while (count < numbers) {
+
+            let check = true; // xác thực xem số đang xét có phải nguyên tố hay ko
+            // vòng lặp để xét xem số hiện tại có phải nguyên tố hay không
+            for (let i = 2; i <= (N / 2); i++) {
+                if (N % i === 0) {
+                    check = false
+                    break;
+                }
+            }
+
+            if (check === true) {
+                console.log("==> ", N);
+                count++
+            }
+
+            N++;
+        }
+
+    </script>
+</body>
+
+</html>

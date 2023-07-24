@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt("Nhap so ban muon")) // nhap
+
+        let check = true; // bien dung de kiem tra
+
+        // vong lap kiem tra
+        for (let i = 2; i <= (a / 2); i++) {
+            if (a % i == 0) {
+                check = false
+            }
+        }
+
+        // kiem tra lai bien va ket luan
+        if (check == true) {
+            console.log("la so ngto");
+        } else {
+            console.log("ko phai ngto");
+        }
+    </script>
+</body>
+
+</html>
